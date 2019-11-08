@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 gem 'rails',                      '6.0.0'
-gem 'aws-sdk-s3',                 '1.46.0', require: false
 gem 'image_processing',           '1.9.3'
 gem 'mini_magick',                '4.9.5'
 gem 'active_storage_validations', '0.8.2'
@@ -34,7 +33,7 @@ end
 
 group :test do
   gem 'capybara',                 '3.28.0'
-  gem 'selenium-webdriver',       '3.142.4'
+  gem 'selenium-webdriver',       '3.142.3'
   gem 'webdrivers',               '4.1.2'
   gem 'rails-controller-testing', '1.0.4'
   gem 'minitest',                 '5.11.3'
@@ -45,6 +44,7 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
+  gem 'aws-sdk-s3', '1.46.0', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
