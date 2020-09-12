@@ -20,6 +20,7 @@ gem 'jbuilder',                   '2.9.1'
 gem 'bootsnap',                   '1.4.4', require: false
 gem "websocket-extensions", ">= 0.1.5"
 gem "actionpack", ">= 6.0.3.2"
+gem "actionview", ">= 6.0.3.3"
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
